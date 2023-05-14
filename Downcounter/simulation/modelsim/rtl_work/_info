@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Programming\DSD\Downcounter\simulation\modelsim
+vdowncounter
+I;]STjj[e54?B:6C_I@_:@1
+V30TT?IgQm8cMaGKSn5Q4c0
+Z1 dC:\Programming\DSD\Downcounter\simulation\modelsim
+w1666017788
+8C:/Programming/DSD/Downcounter/downcounter.v
+FC:/Programming/DSD/Downcounter/downcounter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 gOf=0d]Gc<VWk8Da_bMmo1
+!s85 0
+!s108 1666064690.004000
+!s107 C:/Programming/DSD/Downcounter/downcounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/Downcounter|C:/Programming/DSD/Downcounter/downcounter.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Programming/DSD/Downcounter -O0
+vtb_downcounter
+!i10b 1
+!s100 ifU[kFhH<>1LeCFTlb9U33
+IZI[A4kbE4VcJ;Xo0`hiOm3
+VRCWng8R:0<P=hLS;0dQYn2
+R1
+w1666018387
+8C:/Programming/DSD/Downcounter/tb_downcounter.v
+FC:/Programming/DSD/Downcounter/tb_downcounter.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1666064690.116000
+!s107 C:/Programming/DSD/Downcounter/tb_downcounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/Downcounter|C:/Programming/DSD/Downcounter/tb_downcounter.v|
+!s101 -O0
+R3
+R4

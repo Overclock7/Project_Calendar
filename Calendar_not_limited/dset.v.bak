@@ -1,0 +1,41 @@
+module dset(now_date,set_date,dcal_7seg);
+
+input [22:0]now_date;
+input [22:0]set_date;
+
+output reg [55:0]dcal_7seg;
+
+wire [21:0]now_day;
+wire [21:0]set_day;
+
+wire [21:0]A;
+wire [21:0]B;
+
+always @(*)
+	begin
+	day_sum (now_date,now_day);
+	day_sum (set_date,set_day);
+
+	if(now_day =< set_day)
+		begin
+		A <= set_day;
+		B <= now_day;
+		dcal_7seg[55:28] <= 28'b010_0001_011_1111_011_1111_111_1111; // "D-- "
+		end
+	else
+		begin
+		A <= set_day;
+		B <= now_day;
+		dcal_7seg[55:35] <= 28'b010_0001_011_1001_000_0111_111_1111; // "D++ "
+		end
+
+
+	if(9999)
+	seg long
+	if(0)
+	day
+	else
+	result
+
+	end
+endmodule

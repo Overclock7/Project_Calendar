@@ -1,0 +1,26 @@
+module date(clock_carry, up, set, reset, date_count, date_7seg);
+
+input clock_carry;
+input [4:0] up;  //KEY[2]
+input [1:0]set;  //SW[0]
+input reset;     //KEY[0]
+
+output [22:0]date_count;
+output [55:0]date_7seg;
+
+wire day_carry;
+wire month_carry;
+
+wire [4:0]day_case;
+wire year_case;
+
+//leap_year
+is_leap_year L0(date_count[22:9], year_case);
+last_day_of_month L1(date_count[8:5],year_case,day_case);
+
+// date module
+day D0(clock_carry, up[0], set[1:0] ,reset, day_case, date_count[4:0], day_carry, date_7seg[13:0]);
+month M0(day_carry, up[1], set[1], reset, date_count[8:5], month_carry, date_7seg[27:14]);
+year Y0(month_carry, up[4:2], set[1], reset, date_count[22:9], date_7seg[55:28]); 
+
+endmodule

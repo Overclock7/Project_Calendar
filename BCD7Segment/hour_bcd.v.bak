@@ -1,0 +1,20 @@
+module hour_bcd(clk,rst,bcd);
+
+input clk,rst;
+wire [7:0]bcd;
+wire [3:0]count;
+wire carry;
+
+counter #(24,4)counter(.clk(clk),.rst(rst),.count(count));
+
+always @(count)
+begin
+if (count < 10)
+bcd <= count;
+else if (count < 20)
+bcd <= count+4'b0110;
+else
+bcd <= count+4'b1100;
+end
+
+endmodule;

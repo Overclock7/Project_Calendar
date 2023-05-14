@@ -1,0 +1,109 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do downcounter_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {downcounter.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module downcounter
+# 
+# Top level modules:
+# 	downcounter
+# 
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Downcounter {C:/Programming/DSD/Downcounter/tb_downcounter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_downcounter
+# 
+# Top level modules:
+# 	tb_downcounter
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  tb_downcounter
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps tb_downcounter 
+# Loading work.tb_downcounter
+# Loading work.downcounter
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading instances from downcounter_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from downcounter_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_downcounter File: C:/Programming/DSD/Downcounter/tb_downcounter.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0) count_out =  x carry_out = x
+#                    3) count_out =  x carry_out = 0
+#                    3) count_out =  X carry_out = 0
+#                    3) count_out =  X carry_out = 0
+#                    3) count_out =  X carry_out = 0
+#                    4) count_out =  9 carry_out = 0
+#                   21) count_out =  8 carry_out = 0
+#                   31) count_out = 12 carry_out = 0
+#                   31) count_out =  4 carry_out = 0
+#                   31) count_out =  5 carry_out = 0
+#                   31) count_out =  7 carry_out = 0
+#                   41) count_out =  6 carry_out = 0
+#                   44) count_out =  2 carry_out = 0
+#                   44) count_out = 10 carry_out = 0
+#                   44) count_out = 11 carry_out = 0
+#                   44) count_out =  9 carry_out = 0
+#                   51) count_out =  8 carry_out = 0
+#                   61) count_out = 12 carry_out = 0
+#                   61) count_out =  4 carry_out = 0
+#                   61) count_out =  5 carry_out = 0
+#                   61) count_out =  7 carry_out = 0
+#                   71) count_out =  6 carry_out = 0
+#                   81) count_out =  7 carry_out = 0
+#                   81) count_out =  5 carry_out = 0
+#                   91) count_out =  4 carry_out = 0
+#                  101) count_out =  0 carry_out = 0
+#                  101) count_out =  1 carry_out = 0
+#                  101) count_out =  3 carry_out = 0
+#                  111) count_out =  2 carry_out = 0
+#                  121) count_out =  3 carry_out = 0
+#                  121) count_out =  1 carry_out = 0
+#                  131) count_out =  0 carry_out = 0
+#                  141) count_out =  0 carry_out = 1
+#                  141) count_out =  8 carry_out = 1
+#                  141) count_out =  9 carry_out = 1
+#                  151) count_out =  9 carry_out = 0
+#                  151) count_out =  8 carry_out = 0
+#                  161) count_out = 12 carry_out = 0
+#                  161) count_out =  4 carry_out = 0
+#                  161) count_out =  5 carry_out = 0
+#                  161) count_out =  7 carry_out = 0
+#                  171) count_out =  6 carry_out = 0
+#                  181) count_out =  7 carry_out = 0
+#                  181) count_out =  5 carry_out = 0
+#                  191) count_out =  4 carry_out = 0
+#                  201) count_out =  0 carry_out = 0
+#                  201) count_out =  1 carry_out = 0
+#                  201) count_out =  3 carry_out = 0
+#                  211) count_out =  2 carry_out = 0
+#                  221) count_out =  3 carry_out = 0
+#                  221) count_out =  1 carry_out = 0
+#                  231) count_out =  0 carry_out = 0
+#                  241) count_out =  0 carry_out = 1
+#                  241) count_out =  8 carry_out = 1
+#                  241) count_out =  9 carry_out = 1
+# Break in Module tb_downcounter at C:/Programming/DSD/Downcounter/tb_downcounter.v line 26
+# Simulation Breakpoint: Break in Module tb_downcounter at C:/Programming/DSD/Downcounter/tb_downcounter.v line 26
+# MACRO ./downcounter_run_msim_gate_verilog.do PAUSED at line 17

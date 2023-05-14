@@ -1,0 +1,16 @@
+//clock_generator
+module clock_generator(clk_in,rst,clk_out);
+
+input clk_in;
+input rst;
+output clk_out;
+wire clk_mid, clk_inv;
+
+assign clk_inv = ~clk_out;
+
+counter #(25000000,$clog2(25000000))C0(.clk(clk_in),.rst(rst),.carry(clk_mid));
+dff D0(clk_mid,rst,clk_inv,clk_out);
+
+endmodule
+
+

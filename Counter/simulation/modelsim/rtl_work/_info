@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Programming\DSD\Counter\simulation\modelsim
+vcounter
+I7IlO5B?MkBUHM0=;1_COz1
+VEHXHn=Fc0Z]6SYz;B?BT93
+Z1 dC:\Programming\DSD\Counter\simulation\modelsim
+w1666005051
+8C:/Programming/DSD/Counter/counter.v
+FC:/Programming/DSD/Counter/counter.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 2fbZ7Gl4FgWjc1QR=5nKX1
+!s85 0
+!s108 1666010325.194000
+!s107 C:/Programming/DSD/Counter/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/Counter|C:/Programming/DSD/Counter/counter.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Programming/DSD/Counter -O0
+vtb_counter
+!i10b 1
+!s100 YUYLA><odzUhI95J]IhY?2
+I[G1`Q8RXaC16:_kc`g:UV0
+VJ5RadH<Gz7oNBSHdal3@F3
+R1
+w1666008011
+8C:/Programming/DSD/Counter/tb_counter.v
+FC:/Programming/DSD/Counter/tb_counter.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1666010325.304000
+!s107 C:/Programming/DSD/Counter/tb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/Counter|C:/Programming/DSD/Counter/tb_counter.v|
+!s101 -O0
+R3
+R4

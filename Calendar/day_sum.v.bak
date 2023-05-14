@@ -1,0 +1,222 @@
+/*module DdayCalc(now_day, now_month, not_year, set_day, set_month, set_year, Dday_output);
+
+input [7:0] now_day;
+input [7:0] now_month;
+input [13:0] not_year;
+input [7:0] set_day;
+input [7:0] set_month;
+input [13:0] set_year;
+
+output [13:0] Dday_output;
+
+
+
+////????????????????????????????????????
+wire result = 0;
+
+
+
+//1.
+if(set_year > now_year)
+	for(i = now_year + 1 ; i<set_year; i= i +1)
+		if(i%4==0 && i%100!==0)||(i%400))
+			result = result + 366;
+		else
+			result = result + 365;
+
+			
+//2.
+if(now_month < 12)
+	//leap year
+	//2-1
+	if((now_year %4 == 0 && now_year % 100!=0)||(now_year % 400))
+		for(i = 12; i>now_month; i = i-1)
+		if(i == 12)
+			result = result + 31;
+		if else(i==11)     //********************,,,,,,,,,,else if,,,,,,,,,,gkdkkdkdldksklsd
+			result = result + 30;
+		if else(i==10)
+			result = result + 31;
+		if else(i==9)
+			result = result + 30;
+		if else(i==8)
+			result = result + 31;
+		if else(i==7)
+			result = result + 31;
+		if else(i==6)
+			result = result + 30;
+		if else(i==5)
+			result = result + 31;	
+		if else(i==4)
+			result = result + 30;
+		if else(i==3)
+			result = result + 31;
+		if else(i==2)
+			result = result + 29;
+			
+	else//not leap year
+		for(i = 12; i>now_month; i = i-1)
+		if(i == 12)
+			result = result + 31;
+		if else(i==11)
+			result = result + 30;
+		if else(i==10)
+			result = result + 31;
+		if else(i==9)
+			result = result + 30;
+		if else(i==8)
+			result = result + 31;
+		if else(i==7)
+			result = result + 31;
+		if else(i==6)
+			result = result + 30;
+		if else(i==5)
+			result = result + 31;	
+		if else(i==4)
+			result = result + 30;
+		if else(i==3)
+			result = result + 31;
+		if else(i==2)
+			result = result + 28;
+	//2-2
+	if(now_day < 31)
+		result = result + (31-now_day);
+
+
+	
+//3. 
+//3-1
+if(1 < set_month)
+	//leap year
+	if((set_year %4 == 0 && set_year % 100!=0)||(set_year % 400))
+		for(i = 1; i<now_month; i = i+1)
+		if(i == 12)
+			result = result + 31;
+		if else(i==11) 
+			result = result + 30;
+		if else(i==10)
+			result = result + 31;
+		if else(i==9)
+			result = result + 30;
+		if else(i==8)
+			result = result + 31;
+		if else(i==7)
+			result = result + 31;
+		if else(i==6)
+			result = result + 30;
+		if else(i==5)
+			result = result + 31;	
+		if else(i==4)
+			result = result + 30;
+		if else(i==3)
+			result = result + 31;
+		if else(i==2)
+			result = result + 29;
+	else//not leap year
+		for(i = 12; i>now_month; i = i-1)
+		if(i == 12)
+			result = result + 31;
+		if else(i==11)
+			result = result + 30;
+		if else(i==10)
+			result = result + 31;
+		if else(i==9)
+			result = result + 30;
+		if else(i==8)
+			result = result + 31;
+		if else(i==7)
+			result = result + 31;
+		if else(i==6)
+			result = result + 30;
+		if else(i==5)
+			result = result + 31;	
+		if else(i==4)
+			result = result + 30;
+		if else(i==3)
+			result = result + 31;
+		if else(i==2)
+			result = result + 28;
+
+//3-2
+result = result + set_day;
+
+
+*/
+
+
+
+module day_sum(now_date, now_days);
+
+input [22:0] now_date;
+output [22:0] now_days;
+
+
+
+wire now_day = now_date[4:0];
+wire now_month = now_date[8:5];
+wire now_year = now_date[22:9];
+
+//wire result;
+wire [11:0] result_yoon_count; //[11:0] = 4096 (2500~?)
+wire [4:0] result2;
+wire leap_year;
+
+
+
+is_leap_year I0 (now_year,leap_year);
+Month_to_day M0 (now_month, leap_year, result2);
+
+
+assign result_yoon_count = (((now_year-1)/4)-((now_year-1)/100)+((now_year-1)/400));  //yoon coun
+
+assign now_days = (result_yoon_count) + ((now_year-1)*365) +  result2 + now_day;  //final result
+
+
+endmodule
+
+
+	
+	
+
+	
+	
+	
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

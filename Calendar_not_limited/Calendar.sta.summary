@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'KEY[2]'
+Slack : -31.386
+TNS   : -378.036
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -3.264
+TNS   : -156.326
+
+Type  : Slow Model Setup 'KEY[1]'
+Slack : -0.312
+TNS   : -1.050
+
+Type  : Slow Model Setup 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Setup 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Hold 'KEY[2]'
+Slack : -7.718
+TNS   : -56.761
+
+Type  : Slow Model Hold 'KEY[1]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.795
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -59.380
+
+Type  : Slow Model Minimum Pulse Width 'KEY[2]'
+Slack : -1.222
+TNS   : -79.222
+
+Type  : Slow Model Minimum Pulse Width 'KEY[1]'
+Slack : -1.222
+TNS   : -9.222
+
+Type  : Slow Model Minimum Pulse Width 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Slow Model Minimum Pulse Width 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'KEY[2]'
+Slack : -13.552
+TNS   : -133.557
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -0.926
+TNS   : -40.244
+
+Type  : Fast Model Setup 'KEY[1]'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast Model Setup 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Setup 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'KEY[2]'
+Slack : -3.733
+TNS   : -28.051
+
+Type  : Fast Model Hold 'KEY[1]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -59.380
+
+Type  : Fast Model Minimum Pulse Width 'KEY[2]'
+Slack : -1.222
+TNS   : -79.222
+
+Type  : Fast Model Minimum Pulse Width 'KEY[1]'
+Slack : -1.222
+TNS   : -9.222
+
+Type  : Fast Model Minimum Pulse Width 'input_module:I0|clock_generator:G0|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'input_module:I0|clock_generator:G1|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Minimum Pulse Width 'input_module:I0|clock_generator:G2|counter:C0|carry'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------

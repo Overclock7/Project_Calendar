@@ -1,0 +1,193 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Calendar_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/year.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module year
+# 
+# Top level modules:
+# 	year
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/second.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module second
+# 
+# Top level modules:
+# 	second
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/output_mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module output_mux
+# 
+# Top level modules:
+# 	output_mux
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/output_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module output_module
+# 
+# Top level modules:
+# 	output_module
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/month_to_days.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module month_to_days
+# 
+# Top level modules:
+# 	month_to_days
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/month.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module month
+# 
+# Top level modules:
+# 	month
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/minute.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module minute
+# 
+# Top level modules:
+# 	minute
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/last_day_of_month.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module last_day_of_month
+# 
+# Top level modules:
+# 	last_day_of_month
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/is_leap_year.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module is_leap_year
+# 
+# Top level modules:
+# 	is_leap_year
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/input_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module input_module
+# 
+# Top level modules:
+# 	input_module
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/hour.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hour
+# 
+# Top level modules:
+# 	hour
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/flicker_7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flicker_7seg
+# 
+# Top level modules:
+# 	flicker_7seg
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/d_flip_flop.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module d_flip_flop
+# 
+# Top level modules:
+# 	d_flip_flop
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/demux_1to6.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demux_1to6
+# 
+# Top level modules:
+# 	demux_1to6
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/demux_1to3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demux_1to3
+# 
+# Top level modules:
+# 	demux_1to3
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/demux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module demux
+# 
+# Top level modules:
+# 	demux
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/dcal.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcal
+# 
+# Top level modules:
+# 	dcal
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/day_of_the_week.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module day_of_the_week
+# 
+# Top level modules:
+# 	day_of_the_week
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/days_sum.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module days_sum
+# 
+# Top level modules:
+# 	days_sum
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/day.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module day
+# 
+# Top level modules:
+# 	day
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/date.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module date
+# 
+# Top level modules:
+# 	date
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/clock_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_generator
+# 
+# Top level modules:
+# 	clock_generator
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/clock.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# 
+# Top level modules:
+# 	clock
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/Calendar.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Calendar
+# 
+# Top level modules:
+# 	Calendar
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/binary_to_bcd_8bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module binary_to_bcd_8bit
+# 
+# Top level modules:
+# 	binary_to_bcd_8bit
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/binary_to_bcd_4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module binary_to_bcd_4bit
+# 
+# Top level modules:
+# 	binary_to_bcd_4bit
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/bcd_to_7segment.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_to_7segment
+# 
+# Top level modules:
+# 	bcd_to_7segment
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/counter_bugfix.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_bugfix
+# 
+# Top level modules:
+# 	counter_bugfix
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Calendar_not_limited {C:/Programming/DSD/Calendar_not_limited/binary_to_bcd_24bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module binary_to_bcd_24bit
+# 
+# Top level modules:
+# 	binary_to_bcd_24bit
+# 

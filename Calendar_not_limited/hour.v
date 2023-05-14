@@ -1,0 +1,69 @@
+module hour(clock,up,set,reset,mode_ampm,hour_7seg,hour_carry);
+
+parameter MODULO = 24;
+parameter BITS = 5;
+
+input clock;
+input up;			// KEY[2]
+input set;			// SW[0]
+input reset;		// KEY[0]
+input mode_ampm;	// SW[3]
+
+output [27:0]hour_7seg;
+output hour_carry;
+
+wire clock_in; // clock selector result
+wire [BITS-1:0]hour_count;
+reg [BITS-1:0]hour_count_final;
+wire [8:0] hour_bcd;
+reg [13:0] ampm_7seg;
+
+
+// clock selector
+assign clock_in = set ? up : clock;	
+
+// modulo-24 counter
+counter_bugfix #(MODULO,BITS)C0(clock_in,set,reset,hour_count,hour_carry);
+
+// 12/24 mode setting
+always @(mode_ampm)
+	begin
+		if(!mode_ampm) // mode = 0 // 24hours
+			begin
+				hour_count_final <= hour_count;
+				ampm_7seg[13:0] <= 14'b111_1111_111_1111; // 'Blank' 'Blank'
+			end
+		else // mode = 1 // 12hours
+			begin
+				if (hour_count == 0)
+					begin
+					hour_count_final <= 12;
+					ampm_7seg[13:0] <= 14'b000_1000_011_1111;  // 'A' '-'
+					end
+				else if(hour_count >= 1 && hour_count <= 11)
+					begin
+					hour_count_final <= hour_count;
+					ampm_7seg[13:0] <= 14'b000_1000_011_1111;  // 'A' '-'
+					end
+				else if(hour_count == 12)
+					begin
+					hour_count_final <= hour_count;
+					ampm_7seg[13:0] <= 14'b000_1100_011_1111;	// 'P' '-'
+					end
+				else
+					begin
+					hour_count_final <= hour_count - 4'd12;
+					ampm_7seg[13:0] <= 14'b000_1100_011_1111;	// 'P' '-'
+					end
+			end
+	end		
+
+// binary to bcd	
+binary_to_bcd_8bit B0(hour_count_final,hour_bcd);
+
+// bcd to 7segment
+bcd_to_7segment S0(hour_bcd[3:0],hour_7seg[6:0],1'b0);
+bcd_to_7segment S1(hour_bcd[7:4],hour_7seg[13:7],1'b1);
+assign hour_7seg[27:14] = ampm_7seg;
+
+endmodule

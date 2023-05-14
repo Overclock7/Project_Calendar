@@ -1,0 +1,20 @@
+//main
+module bcd_counter_7segment(clk_50,reset,seven_zero,seven_one,led_out);
+
+input clk_50, reset;
+output [6:0]seven_zero;
+output [6:0]seven_one;
+output [5:0]led_out;
+wire clk_1;
+wire carry_m10;
+wire [3:0]count_m10;
+wire [2:0]count_m6;
+
+clock_generator CLK(.clk_in(clk_50),.rst(reset),.clk_out(clk_1));
+counter #(10,4)C10(.clk(clk_1),.rst(reset),.count(count_m10),.carry(carry_m10));
+counter #(6,3)C6(.clk(carry_m10),.rst(reset),.count(count_m6));
+seven_seg_decoder D1(.bcd(count_m10),.display(seven_zero),.leading_zero(0));
+seven_seg_decoder D2(.bcd(count_m6),.display(seven_one),.leading_zero(1));
+led_cnt L1(.clk(count_m6),.led(led_out));
+
+endmodule

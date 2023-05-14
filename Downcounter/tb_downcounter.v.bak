@@ -1,0 +1,27 @@
+`timescale 1ns/1ps
+
+module tb_downcounter;
+
+parameter MOD = 10;
+parameter BITS = 4;
+parameter CLK_PERIOD = 20;
+
+reg clk;
+reg rst;
+wire[BITS-1:0] q;
+wire co;
+
+downcounter tb1(.clk(clk),.rst(rst),.count_out(q),.carry_out(co));
+
+initial clk = 1'b0;
+always #(CLK_PERIOD/2) clk = ~clk;
+
+initial
+begin
+rst = 1'b1;
+#5 rst = 1'b0;
+#5 rst = 1'b1;
+#(MOD*CLK_PERIOD*2) $stop;
+end
+
+endmodule

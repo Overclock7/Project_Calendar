@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Programming\DSD\BCD7Segment\simulation\modelsim
+vcounter
+I2fHL;J_XD[f98;13P0ZUS2
+VhozTSV`Uj?YG8_nQo11^]0
+Z1 dC:\Programming\DSD\BCD7Segment\simulation\modelsim
+w1666442486
+8bcd_counter_7segment.vo
+Fbcd_counter_7segment.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 QO2]GBWd;Ko:0UbJFOHD>0
+!s85 0
+!s108 1666442528.540000
+!s107 bcd_counter_7segment.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|bcd_counter_7segment.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtb_counter
+!i10b 1
+!s100 EC5LggLX0E?YLomU8XjDo2
+IK2>WCbXddZBnD8[H^<JbV1
+VS61FlfcOEnkj7TJ]:S[;03
+R1
+w1666442473
+8C:/Programming/DSD/BCD7Segment/tb_counter.v
+FC:/Programming/DSD/BCD7Segment/tb_counter.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1666442528.682000
+!s107 C:/Programming/DSD/BCD7Segment/tb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/tb_counter.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Programming/DSD/BCD7Segment -O0

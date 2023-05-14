@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Calendar">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|day_of_the_week:D3|is_leap_year:I0|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_k6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S2|is_leap_year:I0|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_m6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S2|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_jem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|day_of_the_week:D3|is_leap_year:I0|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_m6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|day_of_the_week:D3|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_jem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|day_of_the_week:D3|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_h6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S2|is_leap_year:I0|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_k6m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_hem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S2|lpm_mult:Mult0" CBX_FILE_NAME="mult_mat.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|day_of_the_week:D3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_hem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Calendar|dcal:D1|days_sum:S1|lpm_mult:Mult0" CBX_FILE_NAME="mult_mat.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

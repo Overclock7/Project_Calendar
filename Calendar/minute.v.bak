@@ -1,0 +1,30 @@
+module minute(clock,up,set,reset,min_7seg,min_carry);
+
+parameter MODULO = 60;
+parameter BITS = 6;
+
+input clock;
+input up;		// KEY[2]
+input set;		// SW[0]
+input reset;	// KEY[0]
+
+output min_carry;
+output [13:0]min_7seg;
+
+wire clock_in;	// clock selector result
+wire [BITS-1:0]min_count;
+wire [8:0]min_bcd;
+
+assign clock_in = set ? up : clock;	// clock selector
+
+// modulo-60 counter
+counter #(MODULO,BITS)C0(clock_in,reset,min_count,min_carry);
+
+// binary to bcd
+binary_to_bcd_8bit B0(min_count,min_bcd);
+
+// bcd to 7segment
+bcd_to_7segment S0(min_bcd[3:0],min_7seg[6:0],1'b0);
+bcd_to_7segment S1(min_bcd[7:4],min_7seg[13:7],1'b1);
+
+endmodule

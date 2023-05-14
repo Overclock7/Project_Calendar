@@ -1,0 +1,152 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do counter_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {counter_fast.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# 
+# vlog -vlog01compat -work work +incdir+C:/Programming/DSD/Counter {C:/Programming/DSD/Counter/tb_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_counter
+# 
+# Top level modules:
+# 	tb_counter
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  tb_counter
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps tb_counter 
+# Loading work.tb_counter
+# Loading work.counter
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from counter_v_fast.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from counter_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_counter File: C:/Programming/DSD/Counter/tb_counter.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0) count_out =  x carry_out = x
+#                    2) count_out =  X carry_out = x
+#                    2) count_out =  X carry_out = x
+#                    2) count_out =  X carry_out = x
+#                    2) count_out =  X carry_out = 0
+#                    2) count_out =  0 carry_out = 0
+#                   33) count_out =  1 carry_out = 0
+#                   53) count_out =  0 carry_out = 0
+#                   54) count_out =  2 carry_out = 0
+#                   73) count_out =  3 carry_out = 0
+#                   78) count_out =  2 carry_out = 0
+#                   78) count_out =  0 carry_out = 0
+#                   93) count_out =  1 carry_out = 0
+#                  113) count_out =  0 carry_out = 0
+#                  114) count_out =  2 carry_out = 0
+#                  133) count_out =  3 carry_out = 0
+#                  153) count_out =  2 carry_out = 0
+#                  154) count_out =  4 carry_out = 0
+#                  173) count_out =  5 carry_out = 0
+#                  193) count_out =  4 carry_out = 0
+#                  194) count_out =  6 carry_out = 0
+#                  213) count_out =  7 carry_out = 0
+#                  233) count_out =  6 carry_out = 0
+#                  233) count_out = 14 carry_out = 0
+#                  234) count_out =  8 carry_out = 0
+#                  253) count_out =  9 carry_out = 0
+#                  273) count_out =  8 carry_out = 0
+#                  274) count_out = 10 carry_out = 0
+#                  293) count_out = 11 carry_out = 0
+#                  313) count_out = 10 carry_out = 0
+#                  314) count_out = 12 carry_out = 0
+#                  333) count_out = 13 carry_out = 0
+#                  353) count_out = 12 carry_out = 0
+#                  354) count_out = 14 carry_out = 0
+#                  373) count_out = 15 carry_out = 0
+#                  393) count_out = 14 carry_out = 0
+#                  393) count_out =  6 carry_out = 0
+#                  394) count_out =  0 carry_out = 0
+#                  394) count_out = 16 carry_out = 0
+#                  413) count_out = 17 carry_out = 0
+#                  433) count_out = 16 carry_out = 0
+#                  434) count_out = 18 carry_out = 0
+#                  453) count_out = 19 carry_out = 0
+#                  473) count_out = 18 carry_out = 0
+#                  474) count_out = 20 carry_out = 0
+#                  493) count_out = 21 carry_out = 0
+#                  513) count_out = 20 carry_out = 0
+#                  514) count_out = 22 carry_out = 0
+#                  533) count_out = 23 carry_out = 0
+#                  553) count_out = 22 carry_out = 0
+#                  554) count_out = 16 carry_out = 0
+#                  554) count_out = 16 carry_out = 1
+#                  554) count_out =  0 carry_out = 1
+#                  573) count_out =  1 carry_out = 1
+#                  574) count_out =  1 carry_out = 0
+#                  593) count_out =  0 carry_out = 0
+#                  594) count_out =  2 carry_out = 0
+#                  613) count_out =  3 carry_out = 0
+#                  633) count_out =  2 carry_out = 0
+#                  634) count_out =  4 carry_out = 0
+#                  653) count_out =  5 carry_out = 0
+#                  673) count_out =  4 carry_out = 0
+#                  674) count_out =  6 carry_out = 0
+#                  693) count_out =  7 carry_out = 0
+#                  713) count_out =  6 carry_out = 0
+#                  713) count_out = 14 carry_out = 0
+#                  714) count_out =  8 carry_out = 0
+#                  733) count_out =  9 carry_out = 0
+#                  753) count_out =  8 carry_out = 0
+#                  754) count_out = 10 carry_out = 0
+#                  773) count_out = 11 carry_out = 0
+#                  793) count_out = 10 carry_out = 0
+#                  794) count_out = 12 carry_out = 0
+#                  813) count_out = 13 carry_out = 0
+#                  833) count_out = 12 carry_out = 0
+#                  834) count_out = 14 carry_out = 0
+#                  853) count_out = 15 carry_out = 0
+#                  873) count_out = 14 carry_out = 0
+#                  873) count_out =  6 carry_out = 0
+#                  874) count_out =  0 carry_out = 0
+#                  874) count_out = 16 carry_out = 0
+#                  893) count_out = 17 carry_out = 0
+#                  913) count_out = 16 carry_out = 0
+#                  914) count_out = 18 carry_out = 0
+#                  933) count_out = 19 carry_out = 0
+#                  953) count_out = 18 carry_out = 0
+#                  954) count_out = 20 carry_out = 0
+#                  973) count_out = 21 carry_out = 0
+#                  993) count_out = 20 carry_out = 0
+#                  994) count_out = 22 carry_out = 0
+#                 1013) count_out = 23 carry_out = 0
+#                 1033) count_out = 22 carry_out = 0
+#                 1034) count_out = 16 carry_out = 0
+#                 1034) count_out = 16 carry_out = 1
+#                 1034) count_out =  0 carry_out = 1
+# Break in Module tb_counter at C:/Programming/DSD/Counter/tb_counter.v line 26
+# Simulation Breakpoint: Break in Module tb_counter at C:/Programming/DSD/Counter/tb_counter.v line 26
+# MACRO ./counter_run_msim_gate_verilog.do PAUSED at line 17

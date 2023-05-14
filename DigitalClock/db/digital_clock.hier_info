@@ -1,0 +1,590 @@
+|digital_clock
+CLOCK_50 => CLOCK_50.IN1
+KEY[0] => KEY[0].IN5
+KEY[1] => KEY[1].IN1
+KEY[2] => KEY[2].IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN3
+HEX0[0] <= bcd_to_7segment:B7S0.port1
+HEX0[1] <= bcd_to_7segment:B7S0.port1
+HEX0[2] <= bcd_to_7segment:B7S0.port1
+HEX0[3] <= bcd_to_7segment:B7S0.port1
+HEX0[4] <= bcd_to_7segment:B7S0.port1
+HEX0[5] <= bcd_to_7segment:B7S0.port1
+HEX0[6] <= bcd_to_7segment:B7S0.port1
+HEX1[0] <= bcd_to_7segment:B7S1.port1
+HEX1[1] <= bcd_to_7segment:B7S1.port1
+HEX1[2] <= bcd_to_7segment:B7S1.port1
+HEX1[3] <= bcd_to_7segment:B7S1.port1
+HEX1[4] <= bcd_to_7segment:B7S1.port1
+HEX1[5] <= bcd_to_7segment:B7S1.port1
+HEX1[6] <= bcd_to_7segment:B7S1.port1
+HEX2[0] <= bcd_to_7segment:B7S2.port1
+HEX2[1] <= bcd_to_7segment:B7S2.port1
+HEX2[2] <= bcd_to_7segment:B7S2.port1
+HEX2[3] <= bcd_to_7segment:B7S2.port1
+HEX2[4] <= bcd_to_7segment:B7S2.port1
+HEX2[5] <= bcd_to_7segment:B7S2.port1
+HEX2[6] <= bcd_to_7segment:B7S2.port1
+HEX3[0] <= bcd_to_7segment:B7S3.port1
+HEX3[1] <= bcd_to_7segment:B7S3.port1
+HEX3[2] <= bcd_to_7segment:B7S3.port1
+HEX3[3] <= bcd_to_7segment:B7S3.port1
+HEX3[4] <= bcd_to_7segment:B7S3.port1
+HEX3[5] <= bcd_to_7segment:B7S3.port1
+HEX3[6] <= bcd_to_7segment:B7S3.port1
+HEX4[0] <= bcd_to_7segment:B7S4.port1
+HEX4[1] <= bcd_to_7segment:B7S4.port1
+HEX4[2] <= bcd_to_7segment:B7S4.port1
+HEX4[3] <= bcd_to_7segment:B7S4.port1
+HEX4[4] <= bcd_to_7segment:B7S4.port1
+HEX4[5] <= bcd_to_7segment:B7S4.port1
+HEX4[6] <= bcd_to_7segment:B7S4.port1
+HEX5[0] <= bcd_to_7segment:B7S5.port1
+HEX5[1] <= bcd_to_7segment:B7S5.port1
+HEX5[2] <= bcd_to_7segment:B7S5.port1
+HEX5[3] <= bcd_to_7segment:B7S5.port1
+HEX5[4] <= bcd_to_7segment:B7S5.port1
+HEX5[5] <= bcd_to_7segment:B7S5.port1
+HEX5[6] <= bcd_to_7segment:B7S5.port1
+HEX6[0] <= <VCC>
+HEX6[1] <= <VCC>
+HEX6[2] <= <VCC>
+HEX6[3] <= <VCC>
+HEX6[4] <= <VCC>
+HEX6[5] <= <VCC>
+HEX6[6] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+HEX7[0] <= hour_bcd:HB.port7
+HEX7[1] <= hour_bcd:HB.port7
+HEX7[2] <= hour_bcd:HB.port7
+HEX7[3] <= hour_bcd:HB.port7
+HEX7[4] <= hour_bcd:HB.port7
+HEX7[5] <= hour_bcd:HB.port7
+HEX7[6] <= hour_bcd:HB.port7
+LEDR[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+LEDR[10] <= <GND>
+LEDR[11] <= <GND>
+LEDR[12] <= <GND>
+LEDR[13] <= <GND>
+LEDR[14] <= <GND>
+LEDR[15] <= <GND>
+LEDR[16] <= <GND>
+LEDR[17] <= clk_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|clock_generator:CG
+clock_in => clock_in.IN1
+reset => reset.IN2
+clock_out <= d_flip_flop:D0.port3
+
+
+|digital_clock|clock_generator:CG|counter:C0
+clock => carry~reg0.CLK
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+clock => count[2]~reg0.CLK
+clock => count[3]~reg0.CLK
+clock => count[4]~reg0.CLK
+clock => count[5]~reg0.CLK
+clock => count[6]~reg0.CLK
+clock => count[7]~reg0.CLK
+clock => count[8]~reg0.CLK
+clock => count[9]~reg0.CLK
+clock => count[10]~reg0.CLK
+clock => count[11]~reg0.CLK
+clock => count[12]~reg0.CLK
+clock => count[13]~reg0.CLK
+clock => count[14]~reg0.CLK
+clock => count[15]~reg0.CLK
+clock => count[16]~reg0.CLK
+clock => count[17]~reg0.CLK
+clock => count[18]~reg0.CLK
+clock => count[19]~reg0.CLK
+clock => count[20]~reg0.CLK
+clock => count[21]~reg0.CLK
+clock => count[22]~reg0.CLK
+clock => count[23]~reg0.CLK
+clock => count[24]~reg0.CLK
+reset => carry~reg0.ACLR
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+reset => count[4]~reg0.ACLR
+reset => count[5]~reg0.ACLR
+reset => count[6]~reg0.ACLR
+reset => count[7]~reg0.ACLR
+reset => count[8]~reg0.ACLR
+reset => count[9]~reg0.ACLR
+reset => count[10]~reg0.ACLR
+reset => count[11]~reg0.ACLR
+reset => count[12]~reg0.ACLR
+reset => count[13]~reg0.ACLR
+reset => count[14]~reg0.ACLR
+reset => count[15]~reg0.ACLR
+reset => count[16]~reg0.ACLR
+reset => count[17]~reg0.ACLR
+reset => count[18]~reg0.ACLR
+reset => count[19]~reg0.ACLR
+reset => count[20]~reg0.ACLR
+reset => count[21]~reg0.ACLR
+reset => count[22]~reg0.ACLR
+reset => count[23]~reg0.ACLR
+reset => count[24]~reg0.ACLR
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= count[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[9] <= count[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[10] <= count[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[11] <= count[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[12] <= count[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[13] <= count[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[14] <= count[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[15] <= count[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[16] <= count[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[17] <= count[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[18] <= count[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[19] <= count[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[20] <= count[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[21] <= count[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[22] <= count[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[23] <= count[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[24] <= count[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|clock_generator:CG|d_flip_flop:D0
+clock => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|counter:C0
+clock => carry~reg0.CLK
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+reset => carry~reg0.ACLR
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|demux_1to3:DM
+input_0 => output_0.DATAB
+input_0 => output_1.DATAB
+input_0 => output_2.DATAB
+set[0] => Decoder0.IN1
+set[1] => Decoder0.IN0
+output_0 <= output_0.DB_MAX_OUTPUT_PORT_TYPE
+output_1 <= output_1.DB_MAX_OUTPUT_PORT_TYPE
+output_2 <= output_2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|second_bcd:SB
+clock_0 => clock.DATAA
+clock_1 => clock.DATAB
+set => clock.OUTPUTSELECT
+reset => reset.IN1
+count_bcd[0] <= binary_to_bcd_8bit:B0.port1
+count_bcd[1] <= binary_to_bcd_8bit:B0.port1
+count_bcd[2] <= binary_to_bcd_8bit:B0.port1
+count_bcd[3] <= binary_to_bcd_8bit:B0.port1
+count_bcd[4] <= binary_to_bcd_8bit:B0.port1
+count_bcd[5] <= binary_to_bcd_8bit:B0.port1
+count_bcd[6] <= binary_to_bcd_8bit:B0.port1
+count_bcd[7] <= binary_to_bcd_8bit:B0.port1
+carry <= counter:C0.port3
+
+
+|digital_clock|second_bcd:SB|counter:C0
+clock => carry~reg0.CLK
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+clock => count[2]~reg0.CLK
+clock => count[3]~reg0.CLK
+clock => count[4]~reg0.CLK
+clock => count[5]~reg0.CLK
+clock => count[6]~reg0.CLK
+clock => count[7]~reg0.CLK
+reset => carry~reg0.ACLR
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+reset => count[4]~reg0.ACLR
+reset => count[5]~reg0.ACLR
+reset => count[6]~reg0.ACLR
+reset => count[7]~reg0.ACLR
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|second_bcd:SB|binary_to_bcd_8bit:B0
+binary[0] => bcd[0].DATAIN
+binary[1] => LessThan5.IN8
+binary[1] => Add5.IN8
+binary[1] => bcd.DATAA
+binary[2] => LessThan3.IN8
+binary[2] => Add3.IN8
+binary[2] => bcd.DATAA
+binary[3] => LessThan2.IN8
+binary[3] => Add2.IN8
+binary[3] => bcd.DATAA
+binary[4] => LessThan1.IN8
+binary[4] => Add1.IN8
+binary[4] => bcd.DATAA
+binary[5] => LessThan0.IN6
+binary[5] => Add0.IN6
+binary[5] => bcd.DATAA
+binary[6] => LessThan0.IN5
+binary[6] => Add0.IN5
+binary[6] => bcd.DATAA
+binary[7] => LessThan0.IN4
+binary[7] => Add0.IN4
+binary[7] => bcd.DATAA
+bcd[0] <= binary[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= <GND>
+bcd[11] <= <GND>
+
+
+|digital_clock|minute_bcd:MB
+clock_0 => clock.DATAA
+clock_1 => clock.DATAB
+set => clock.OUTPUTSELECT
+reset => reset.IN1
+count_bcd[0] <= binary_to_bcd_8bit:B0.port1
+count_bcd[1] <= binary_to_bcd_8bit:B0.port1
+count_bcd[2] <= binary_to_bcd_8bit:B0.port1
+count_bcd[3] <= binary_to_bcd_8bit:B0.port1
+count_bcd[4] <= binary_to_bcd_8bit:B0.port1
+count_bcd[5] <= binary_to_bcd_8bit:B0.port1
+count_bcd[6] <= binary_to_bcd_8bit:B0.port1
+count_bcd[7] <= binary_to_bcd_8bit:B0.port1
+carry <= counter:C0.port3
+
+
+|digital_clock|minute_bcd:MB|counter:C0
+clock => carry~reg0.CLK
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+clock => count[2]~reg0.CLK
+clock => count[3]~reg0.CLK
+clock => count[4]~reg0.CLK
+clock => count[5]~reg0.CLK
+clock => count[6]~reg0.CLK
+clock => count[7]~reg0.CLK
+reset => carry~reg0.ACLR
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+reset => count[4]~reg0.ACLR
+reset => count[5]~reg0.ACLR
+reset => count[6]~reg0.ACLR
+reset => count[7]~reg0.ACLR
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|minute_bcd:MB|binary_to_bcd_8bit:B0
+binary[0] => bcd[0].DATAIN
+binary[1] => LessThan5.IN8
+binary[1] => Add5.IN8
+binary[1] => bcd.DATAA
+binary[2] => LessThan3.IN8
+binary[2] => Add3.IN8
+binary[2] => bcd.DATAA
+binary[3] => LessThan2.IN8
+binary[3] => Add2.IN8
+binary[3] => bcd.DATAA
+binary[4] => LessThan1.IN8
+binary[4] => Add1.IN8
+binary[4] => bcd.DATAA
+binary[5] => LessThan0.IN6
+binary[5] => Add0.IN6
+binary[5] => bcd.DATAA
+binary[6] => LessThan0.IN5
+binary[6] => Add0.IN5
+binary[6] => bcd.DATAA
+binary[7] => LessThan0.IN4
+binary[7] => Add0.IN4
+binary[7] => bcd.DATAA
+bcd[0] <= binary[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= <GND>
+bcd[11] <= <GND>
+
+
+|digital_clock|hour_bcd:HB
+clock_0 => clock.DATAA
+clock_1 => clock.DATAB
+set => clock.OUTPUTSELECT
+reset => reset.IN1
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => count_binary_final.OUTPUTSELECT
+mode => ampm_7seg.OUTPUTSELECT
+mode => ampm_7seg[6].DATAIN
+mode => ampm_7seg[5].DATAIN
+mode => ampm_7seg[4].DATAIN
+mode => ampm_7seg[1].DATAIN
+mode => ampm_7seg[0].DATAIN
+count_bcd[0] <= binary_to_bcd_8bit:B0.port1
+count_bcd[1] <= binary_to_bcd_8bit:B0.port1
+count_bcd[2] <= binary_to_bcd_8bit:B0.port1
+count_bcd[3] <= binary_to_bcd_8bit:B0.port1
+count_bcd[4] <= binary_to_bcd_8bit:B0.port1
+count_bcd[5] <= binary_to_bcd_8bit:B0.port1
+count_bcd[6] <= binary_to_bcd_8bit:B0.port1
+count_bcd[7] <= binary_to_bcd_8bit:B0.port1
+carry <= counter:C0.port3
+ampm_7seg[0] <= mode.DB_MAX_OUTPUT_PORT_TYPE
+ampm_7seg[1] <= mode.DB_MAX_OUTPUT_PORT_TYPE
+ampm_7seg[2] <= ampm_7seg.DB_MAX_OUTPUT_PORT_TYPE
+ampm_7seg[3] <= <VCC>
+ampm_7seg[4] <= mode.DB_MAX_OUTPUT_PORT_TYPE
+ampm_7seg[5] <= mode.DB_MAX_OUTPUT_PORT_TYPE
+ampm_7seg[6] <= mode.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|hour_bcd:HB|counter:C0
+clock => carry~reg0.CLK
+clock => count[0]~reg0.CLK
+clock => count[1]~reg0.CLK
+clock => count[2]~reg0.CLK
+clock => count[3]~reg0.CLK
+clock => count[4]~reg0.CLK
+clock => count[5]~reg0.CLK
+clock => count[6]~reg0.CLK
+clock => count[7]~reg0.CLK
+reset => carry~reg0.ACLR
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+reset => count[4]~reg0.ACLR
+reset => count[5]~reg0.ACLR
+reset => count[6]~reg0.ACLR
+reset => count[7]~reg0.ACLR
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|hour_bcd:HB|binary_to_bcd_8bit:B0
+binary[0] => bcd[0].DATAIN
+binary[1] => LessThan5.IN8
+binary[1] => Add5.IN8
+binary[1] => bcd.DATAA
+binary[2] => LessThan3.IN8
+binary[2] => Add3.IN8
+binary[2] => bcd.DATAA
+binary[3] => LessThan2.IN8
+binary[3] => Add2.IN8
+binary[3] => bcd.DATAA
+binary[4] => LessThan1.IN8
+binary[4] => Add1.IN8
+binary[4] => bcd.DATAA
+binary[5] => LessThan0.IN6
+binary[5] => Add0.IN6
+binary[5] => bcd.DATAA
+binary[6] => LessThan0.IN5
+binary[6] => Add0.IN5
+binary[6] => bcd.DATAA
+binary[7] => LessThan0.IN4
+binary[7] => Add0.IN4
+binary[7] => bcd.DATAA
+bcd[0] <= binary[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= <GND>
+bcd[11] <= <GND>
+
+
+|digital_clock|bcd_to_7segment:B7S0
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+
+|digital_clock|bcd_to_7segment:B7S1
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+
+|digital_clock|bcd_to_7segment:B7S2
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+
+|digital_clock|bcd_to_7segment:B7S3
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+
+|digital_clock|bcd_to_7segment:B7S4
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+
+|digital_clock|bcd_to_7segment:B7S5
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+leading_zero => seg.OUTPUTSELECT
+
+

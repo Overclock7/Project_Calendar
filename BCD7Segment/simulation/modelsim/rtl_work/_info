@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Programming\DSD\BCD7Segment\simulation\modelsim
+vbcd_counter_7segment
+!i10b 1
+!s100 fZbX;=d9T2bF6ZYJh`4<>3
+Ij9AiT?S_A4z<gSUfZ]XL22
+VHVC>UYk]Q4Q7VnXAXM8Fe1
+Z1 dC:\Programming\DSD\BCD7Segment\simulation\modelsim
+w1666687941
+8C:/Programming/DSD/BCD7Segment/bcd_counter_7segment.v
+FC:/Programming/DSD/BCD7Segment/bcd_counter_7segment.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1666687970.851000
+!s107 C:/Programming/DSD/BCD7Segment/bcd_counter_7segment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/bcd_counter_7segment.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Programming/DSD/BCD7Segment -O0
+vbcd_to_seven_segment_display
+IIhMJcPzDO>`h3c@m>9CH41
+V18_8NBeVU:S1Skb4@eP=l2
+R1
+w1666443734
+8C:/Programming/DSD/BCD7Segment/bcd_to_seven_segment_display.v
+FC:/Programming/DSD/BCD7Segment/bcd_to_seven_segment_display.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 dZWQ6RZlm6Aol1U3mO3LY3
+!s85 0
+!s108 1666687970.453000
+!s107 C:/Programming/DSD/BCD7Segment/bcd_to_seven_segment_display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/bcd_to_seven_segment_display.v|
+!s101 -O0
+vclock_generator
+I`GLzF=7G<596<56lO2eak3
+VOdAgA0_3_=lEf1XL2N[@=1
+R1
+w1666443657
+8C:/Programming/DSD/BCD7Segment/clock_generator.v
+FC:/Programming/DSD/BCD7Segment/clock_generator.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 i1GbW4:H[f7eLGbSWM0f`2
+!s85 0
+!s108 1666687970.771000
+!s107 C:/Programming/DSD/BCD7Segment/clock_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/clock_generator.v|
+!s101 -O0
+vcounter
+I@bBHL^:^EKM>kI<G9WcgU1
+VRW^[BY3Yfd=^=GZY=6oS10
+R1
+w1666442674
+8C:/Programming/DSD/BCD7Segment/counter.v
+FC:/Programming/DSD/BCD7Segment/counter.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 c;8ePGFXn27RooNQ97BV13
+!s85 0
+!s108 1666687970.709000
+!s107 C:/Programming/DSD/BCD7Segment/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/counter.v|
+!s101 -O0
+vd_flip_flop
+I2T1<6aHhKGnQ2hSe<<4OO0
+V0Sn:?Pz0dhVnojA7]61[70
+R1
+w1666442719
+8C:/Programming/DSD/BCD7Segment/d_flip_flop.v
+FC:/Programming/DSD/BCD7Segment/d_flip_flop.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 QA2A`lNBkOLG]=;jkOaAW1
+!s85 0
+!s108 1666687970.644000
+!s107 C:/Programming/DSD/BCD7Segment/d_flip_flop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/d_flip_flop.v|
+!s101 -O0
+vled_control
+IRi<VQhoY03;RZR@j4Xc5i0
+VQTlJC_QiJn_2RVbgNo;592
+R1
+w1666443674
+8C:/Programming/DSD/BCD7Segment/led_control.v
+FC:/Programming/DSD/BCD7Segment/led_control.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ^5]kJzFSN;KjPHi4`RcO_2
+!s85 0
+!s108 1666687970.564000
+!s107 C:/Programming/DSD/BCD7Segment/led_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Programming/DSD/BCD7Segment|C:/Programming/DSD/BCD7Segment/led_control.v|
+!s101 -O0

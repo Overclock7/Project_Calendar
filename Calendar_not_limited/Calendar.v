@@ -1,0 +1,44 @@
+module Calendar(CLOCK_50,KEY,SW,LEDR,LEDG,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
+
+input CLOCK_50;
+input [2:0]KEY;
+input [4:0]SW;
+output [17:0]LEDR;
+output [7:0]LEDG;
+output [6:0]HEX0;
+output [6:0]HEX1;
+output [6:0]HEX2;
+output [6:0]HEX3;
+output [6:0]HEX4;
+output [6:0]HEX5;
+output [6:0]HEX6;
+output [6:0]HEX7;
+
+wire [14:0]up;
+wire [2:0]set;
+wire reset;
+wire [14:0]select;
+wire mode_ampm;
+wire clock_out;
+wire clock_4Hz;
+
+wire clock_carry;
+wire [55:0]clock_7seg;
+wire [55:0]date_7seg;
+wire [55:0]dcal_7seg;
+wire [55:0]dset_7seg;
+wire [22:0]now_day; // year[22:9]_month[8:5]_day[4:0]
+wire [22:0]set_day;
+
+
+input_module I0(CLOCK_50,KEY,SW,up,set,reset,select,mode_ampm,clock_out,clock_4Hz);
+
+clock C0(clock_out,up[2:0],set[0],reset,mode_ampm,clock_carry,clock_7seg);
+date D0(clock_carry,up[8:3],set[1:0],reset,now_day,date_7seg);
+dcal D1(now_day,set_day,dcal_7seg);
+date D2(1'b0,up[14:9],{set[2],1'b0},reset,set_day,dset_7seg); // dset module
+day_of_the_week D3(now_day,LEDR[4:0],LEDG[7:6]); // show day of the week
+
+output_module O0(clock_4Hz,clock_7seg,date_7seg,dcal_7seg,dset_7seg,{SW[1],SW[2]},set[2],select,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
+
+endmodule
